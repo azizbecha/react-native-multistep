@@ -94,7 +94,14 @@ export const MultiStepForm: React.FC<MultiStepFormProps> = ({
         </View>
       );
     });
-  }, [step, totalSteps, activeStepStyle, inactiveStepStyle, scaleAnim]);
+  }, [
+    step,
+    totalSteps,
+    activeStepStyle,
+    inactiveStepStyle,
+    scaleAnim,
+    stepsContainerStyle,
+  ]);
 
   return (
     <View style={[styles.container, style]}>
