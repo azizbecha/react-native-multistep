@@ -1,6 +1,6 @@
 {
   "name": "react-native-multistep",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Create multi-step forms with ease in your React Native app",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
