@@ -152,6 +152,7 @@ const styles = StyleSheet.create({
   },
   indicatorContainer: {
     flexDirection: 'row',
+    justifyContent: 'center',
   },
   stepContainer: {
     flexDirection: 'row',
