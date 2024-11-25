@@ -2,6 +2,10 @@
 
 A flexible and animated multi-step form component for React Native, allowing you to easily create forms with multiple steps. The component provides step indicators, transition animations, and customizable buttons.
 
+<img src='https://github.com/user-attachments/assets/54b26c27-9b48-4cd8-aa3f-dac21306d2f4' width='250'/>
+<img src='https://github.com/user-attachments/assets/2d2d1331-ce1f-41ac-adea-36c8126e0cf0' width='250'/>
+<img src='https://github.com/user-attachments/assets/d034528b-8bb2-4346-827c-8904051fee9b' width='250'/>
+
 ## Features
 
 - **Step Indicator**: Displays a dynamic indicator to show the current step and progress.
