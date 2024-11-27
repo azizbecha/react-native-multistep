@@ -10,6 +10,35 @@ import {
 import { BACK, DONE, NEXT, PRIMARY, SECONDARY } from './constants';
 import type { MultiStepFormProps } from './types';
 
+/**
+ * MultiStepForm Component
+ *
+ * A React Native component for creating multi-step forms with a customizable
+ * step indicator and navigation buttons. Ideal for use cases like onboarding
+ * wizards, surveys, or checkout processes.
+ *
+ * @param {MultiStepFormProps} props - The props object for configuring the form.
+ * @param {React.ReactNode[]} props.stepsContent - Array of content for each step.
+ * @param {string} [props.backButtonLabel=BACK] - Label for the "Back" button.
+ * @param {string} [props.nextButtonLabel=NEXT] - Label for the "Next" button.
+ * @param {string} [props.doneButtonLabel=DONE] - Label for the "Done" button (last step).
+ * @param {function} [props.onStepChange] - Callback triggered when the step changes.
+ * @param {function} [props.onStepForward] - Callback triggered when navigating forward.
+ * @param {function} [props.onStepBackward] - Callback triggered when navigating backward.
+ * @param {function} [props.onComplete] - Callback triggered on completion of the final step.
+ * @param {StyleProp<ViewStyle>} [props.style] - Custom style for the container.
+ * @param {StyleProp<ViewStyle>} [props.nextButtonStyle] - Style for the "Next" button.
+ * @param {StyleProp<ViewStyle>} [props.previousButtonStyle] - Style for the "Back" button.
+ * @param {StyleProp<ViewStyle>} [props.doneButtonStyle] - Style for the "Done" button.
+ * @param {StyleProp<ViewStyle>} [props.stepsContainerStyle] - Style for the steps indicator container.
+ * @param {StyleProp<ViewStyle>} [props.activeStepStyle] - Style for the active step indicator.
+ * @param {StyleProp<ViewStyle>} [props.inactiveStepStyle] - Style for inactive step indicators.
+ * @param {StyleProp<ViewStyle>} [props.contentContainerStyle] - Style for the step content container.
+ * @param {StyleProp<ViewStyle>} [props.buttonsContainerStyle] - Style for the navigation buttons container.
+ *
+ * @returns {React.ReactElement} - A customizable multi-step form component.
+ */
+
 export const MultiStepForm: React.FC<MultiStepFormProps> = ({
   stepsContent,
   onStepChange,
