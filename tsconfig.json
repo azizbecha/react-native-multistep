@@ -1,18 +1,16 @@
 {
   "compilerOptions": {
-    "rootDir": ".",
-    "paths": {
-      "react-native-multistep": ["./src/index"]
-    },
-    "allowUnreachableCode": false,
-    "allowUnusedLabels": false,
+    "rootDir": "./src",
+    "outDir": "./lib",
+    "declaration": true,
+    "declarationDir": "./lib/types",
+    "emitDeclarationOnly": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "jsx": "react-jsx",
     "lib": ["ESNext"],
     "module": "ESNext",
     "moduleResolution": "Bundler",
-    "noEmit": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
     "noImplicitUseStrict": false,
@@ -26,5 +24,6 @@
     "target": "ESNext",
     "verbatimModuleSyntax": true
   },
-  "exclude": ["/example"]
+  "include": ["src/**/*"],
+  "exclude": ["example", "node_modules", "lib"]
 }

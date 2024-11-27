@@ -5,6 +5,7 @@
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
   "module": "./lib/module/index.js",
+  "types": "lib/types/index.d.ts",
   "exports": {
     ".": {
       "import": {
@@ -46,9 +47,16 @@
     "release": "release-it"
   },
   "keywords": [
+    "react",
     "react-native",
     "ios",
-    "android"
+    "android",
+    "multi-step",
+    "form",
+    "setup",
+    "step",
+    "multi-step-form",
+    "react-native-library"
   ],
   "repository": {
     "type": "git",
