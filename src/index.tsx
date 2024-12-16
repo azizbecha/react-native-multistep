@@ -39,6 +39,10 @@ export const MultiStepForm = forwardRef<
     const totalSteps = stepsContent.length;
     const [step, setStep] = useState<number>(1);
 
+    if (totalSteps === 0 || !stepsContent) {
+      throw new Error('Missing steps content');
+    }
+
     // Step transition animations
     const [scaleAnim] = useState(new Animated.Value(1));
 
@@ -91,21 +95,21 @@ export const MultiStepForm = forwardRef<
                 styles.stepIndicator,
                 isActive
                   ? [
-                    styles.activeStep,
-                    activeStepStyle,
-                    { transform: [{ scale: isCurrent ? scaleAnim : 1 }] },
-                  ]
+                      styles.activeStep,
+                      activeStepStyle,
+                      { transform: [{ scale: isCurrent ? scaleAnim : 1 }] },
+                    ]
                   : inactiveStepStyle,
               ]}
             >
-              <Text style={[styles.stepText, isActive && styles.activeStepText]}>
+              <Text
+                style={[styles.stepText, isActive && styles.activeStepText]}
+              >
                 {i + 1}
               </Text>
             </Animated.View>
             {i + 1 < totalSteps && (
-              <View
-                style={[styles.line, i + 1 < step && styles.activeLine]}
-              />
+              <View style={[styles.line, i + 1 < step && styles.activeLine]} />
             )}
           </View>
         );
