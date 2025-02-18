@@ -28,6 +28,8 @@ export const MultiStepForm = forwardRef<
       inactiveStepStyle,
       contentContainerStyle,
       buttonsContainerStyle,
+      lineColor,
+      activeLineColor,
     },
     ref
   ) => {
@@ -104,18 +106,29 @@ export const MultiStepForm = forwardRef<
               </Text>
             </Animated.View>
             {i + 1 < totalSteps && (
-              <View style={[styles.line, i + 1 < step && styles.activeLine]} />
+              <View
+                style={[
+                  styles.line,
+                  { backgroundColor: lineColor },
+                  i + 1 < step && [
+                    styles.activeLine,
+                    { backgroundColor: activeLineColor },
+                  ],
+                ]}
+              />
             )}
           </View>
         );
       });
     }, [
-      step,
       totalSteps,
-      activeStepStyle,
-      inactiveStepStyle,
-      scaleAnim,
+      step,
       stepsContainerStyle,
+      activeStepStyle,
+      scaleAnim,
+      inactiveStepStyle,
+      lineColor,
+      activeLineColor,
     ]);
 
     return (

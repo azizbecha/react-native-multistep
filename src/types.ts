@@ -18,4 +18,6 @@ export type MultiStepFormProps = {
   inactiveStepStyle?: StyleProp<ViewStyle>;
   contentContainerStyle?: StyleProp<ViewStyle>;
   buttonsContainerStyle?: StyleProp<ViewStyle>;
+  lineColor?: string;
+  activeLineColor?: string;
 };

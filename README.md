@@ -56,6 +56,8 @@ import { MultiStepForm } from 'react-native-multistep';
 | `inactiveStepStyle` (optional) | `StyleProp<ViewStyle>` | - | Custom style for **inactive step indicators** ❄️ |
 | `contentContainerStyle` (optional) | `StyleProp<ViewStyle>` | - | Custom style for the **content container** 📝 |
 | `buttonsContainerStyle` (optional) | `StyleProp<ViewStyle>` | - | Custom style for the **footer buttons container** ⚙️ |
+| `lineColor` (optional) | `string` | - | Custom color for the **line between indicators** ✅ |
+| `activeLineColor` (optional) | `string` | - | Custom color for the **active line between indicators** ✅ |
 
 ## 📖 Usage Example 🧵
 
